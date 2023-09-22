@@ -136,7 +136,7 @@ class Home extends Component {
               We are having some trouble to complete your request. Please try
               again.
             </FailureViewDescription>
-            <FailureViewButton onClick={this.onRetryFailureView}>
+            <FailureViewButton onClick={this.onRetryFailureView} type="button">
               Retry
             </FailureViewButton>
           </FailureViewContainer>
@@ -163,7 +163,7 @@ class Home extends Component {
             <NoSearchResultDescription>
               Try different key words or remove search filter
             </NoSearchResultDescription>
-            <NoSearchResultButton onClick={this.onRetryFilter}>
+            <NoSearchResultButton onClick={this.onRetryFilter} type="button">
               Retry
             </NoSearchResultButton>
           </NoSearchResultContainer>
@@ -188,6 +188,7 @@ class Home extends Component {
         <BannerCloseButton
           onClick={this.onChangeBannerDisplay}
           data-testid="close"
+          type="button"
         >
           <AiOutlineClose />
         </BannerCloseButton>
@@ -195,7 +196,7 @@ class Home extends Component {
       <BannerDescription>
         Buy Nxt Watch Premium prepaid plans with UPI
       </BannerDescription>
-      <BannerButton>GET IT NOW</BannerButton>
+      <BannerButton type="button">GET IT NOW</BannerButton>
     </BannerBgContainer>
   )
 
@@ -244,6 +245,7 @@ class Home extends Component {
                         borderColor={isDark ? '#e2e8f0' : '#94a3b8'}
                         onClick={this.onClickSearchButton}
                         data-testid="searchButton"
+                        type="button"
                       >
                         <AiOutlineSearch />
                       </SearchButton>

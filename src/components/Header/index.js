@@ -53,6 +53,7 @@ class Header extends Component {
                 onClick={changeTheme}
                 color={isDark ? '#ffffff' : '#181818'}
                 data-testid="theme"
+                type="button"
               >
                 {isDark ? <WiDaySunny /> : <IoMdMoon />}
               </ThemeButton>
@@ -61,7 +62,10 @@ class Header extends Component {
                   modal
                   nested
                   trigger={
-                    <IconButton color={isDark ? '#ffffff' : '#181818'}>
+                    <IconButton
+                      color={isDark ? '#ffffff' : '#181818'}
+                      type="button"
+                    >
                       <CgMenu />
                     </IconButton>
                   }
@@ -72,6 +76,7 @@ class Header extends Component {
                       <CloseButton
                         onClick={close}
                         color={isDark ? '#f9f9f9' : '#181818'}
+                        type="button"
                       >
                         <AiOutlineClose />
                       </CloseButton>
@@ -85,7 +90,10 @@ class Header extends Component {
                   modal
                   nested
                   trigger={
-                    <IconButton color={isDark ? '#ffffff' : '#181818'}>
+                    <IconButton
+                      color={isDark ? '#ffffff' : '#181818'}
+                      type="button"
+                    >
                       <FiLogOut />
                     </IconButton>
                   }
@@ -123,10 +131,11 @@ class Header extends Component {
               <ThemeButton
                 onClick={changeTheme}
                 color={isDark ? '#ffffff' : '#181818'}
+                type="button"
               >
                 {isDark ? <WiDaySunny /> : <IoMdMoon />}
               </ThemeButton>
-              <IconButton>
+              <IconButton type="button">
                 <ProfileImg
                   src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
                   alt="profile"
@@ -136,7 +145,11 @@ class Header extends Component {
                 <Popup
                   nested
                   modal
-                  trigger={<HeaderLogoutButton>Logout</HeaderLogoutButton>}
+                  trigger={
+                    <HeaderLogoutButton type="button">
+                      Logout
+                    </HeaderLogoutButton>
+                  }
                 >
                   {close => <LogoutPopup closePopup={close} />}
                 </Popup>

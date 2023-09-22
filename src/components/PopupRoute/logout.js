@@ -32,10 +32,13 @@ const LogoutPopup = props => {
               <CancelButton
                 onClick={onClose}
                 borderColor={isDark ? '#e2e8f0' : '#94a3b8'}
+                type="button"
               >
                 Cancel
               </CancelButton>
-              <ConfirmButton onClick={onLogout}>Confirm</ConfirmButton>
+              <ConfirmButton onClick={onLogout} type="button">
+                Confirm
+              </ConfirmButton>
             </LogoutButtonContainer>
           </LogoutContainer>
         )

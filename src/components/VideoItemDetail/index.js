@@ -109,7 +109,7 @@ class Gaming extends Component {
               We are having some trouble to complete your request. Please try
               again.
             </FailureViewDescription>
-            <FailureViewButton onClick={this.onRetryFailureView}>
+            <FailureViewButton onClick={this.onRetryFailureView} type="button">
               Retry
             </FailureViewButton>
           </FailureViewContainer>

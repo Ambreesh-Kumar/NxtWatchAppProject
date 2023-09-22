@@ -41,12 +41,14 @@ const Menu = () => (
               <MenuIconButton
                 color={activeRoute === 'home' ? '#ff0b37' : '#94a3b8'}
                 onClick={onToggleHomeRoute}
+                type="button"
               >
                 <AiFillHome />
               </MenuIconButton>
               <MenuTextButton
                 color={isDark ? '#ffffff' : '#181818'}
                 onClick={onToggleHomeRoute}
+                type="button"
               >
                 Home
               </MenuTextButton>
@@ -60,12 +62,14 @@ const Menu = () => (
               <MenuIconButton
                 color={activeRoute === 'trending' ? '#ff0b37' : '#94a3b8'}
                 onClick={onToggleTrendingRoute}
+                type="button"
               >
                 <HiFire />
               </MenuIconButton>
               <MenuTextButton
                 color={isDark ? '#ffffff' : '#181818'}
                 onClick={onToggleTrendingRoute}
+                type="button"
               >
                 Trending
               </MenuTextButton>
@@ -79,12 +83,14 @@ const Menu = () => (
               <MenuIconButton
                 color={activeRoute === 'gaming' ? '#ff0b37' : '#94a3b8'}
                 onClick={onToggleGamingRoute}
+                type="button"
               >
                 <SiYoutubegaming />
               </MenuIconButton>
               <MenuTextButton
                 color={isDark ? '#ffffff' : '#181818'}
                 onClick={onToggleGamingRoute}
+                type="button"
               >
                 Gaming
               </MenuTextButton>
@@ -100,12 +106,14 @@ const Menu = () => (
               <MenuIconButton
                 color={activeRoute === 'saved-videos' ? '#ff0b37' : '#94a3b8'}
                 onClick={onToggleSavedVideosRoute}
+                type="button"
               >
                 <CgPlayListAdd />
               </MenuIconButton>
               <MenuTextButton
                 color={isDark ? '#ffffff' : '#181818'}
                 onClick={onToggleSavedVideosRoute}
+                type="button"
               >
                 Saved videos
               </MenuTextButton>
