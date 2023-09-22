@@ -66,7 +66,7 @@ export const UsernameInput = styled.input`
   font-size: 13px;
   color: #64748b;
 `
-export const UsernameLabel = styled.h1`
+export const UsernameLabel = styled.label`
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 15px;
@@ -85,7 +85,7 @@ export const LoginCheckbox = styled.input`
   border-radius: 10px;
   outline: none;
 `
-export const ShowPasswordText = styled.p`
+export const ShowPasswordText = styled.label`
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -104,9 +104,12 @@ export const LoginButton = styled.button`
   color: #ffffff;
   cursor: pointer;
 `
-export const ErrorMessage = styled(ShowPasswordText)`
+export const ErrorMessage = styled.p`
+  font-family: 'Roboto';
+  font-weight: 500;
   color: #ff0b37;
   text-align: left;
   width: 90%;
   font-size: 14px;
+  margin-left: 5px;
 `

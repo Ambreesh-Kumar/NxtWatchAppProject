@@ -26,7 +26,7 @@ const LogoutPopup = props => {
         return (
           <LogoutContainer bgColor={isDark ? '#313131' : '#e2e8f0'}>
             <LogoutHeading color={isDark ? '#ffffff' : '#00306e'}>
-              Are you sure you want to logout?
+              Are you sure, you want to logout
             </LogoutHeading>
             <LogoutButtonContainer>
               <CancelButton

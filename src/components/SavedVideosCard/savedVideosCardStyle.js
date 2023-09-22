@@ -63,8 +63,9 @@ export const VideoViewsMainContainer = styled.div`
 export const VideoViewsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 `
 export const ViewsParagraph = styled.p`
   font-family: 'Roboto';
